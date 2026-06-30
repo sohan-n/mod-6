@@ -1,0 +1,6 @@
+target/
+.idea/
+*.iml
+src/main/resources/files/key.json
+
+src/main/resources/files/firebase-config.properties

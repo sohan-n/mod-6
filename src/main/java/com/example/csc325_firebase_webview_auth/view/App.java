@@ -1,6 +1,5 @@
 package com.example.csc325_firebase_webview_auth.view;
 
-
 import com.example.csc325_firebase_webview_auth.model.FirestoreContext;
 import com.google.cloud.firestore.Firestore;
 import com.google.firebase.auth.FirebaseAuth;
@@ -11,9 +10,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- * JavaFX App
- */
 public class App extends Application {
 
     public static Firestore fstore;
@@ -25,7 +21,9 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
         fstore = contxtFirebase.firebase();
         fauth = FirebaseAuth.getInstance();
-        scene = new Scene(loadFXML("/files/AccessFBView.fxml"));
+        scene = new Scene(loadFXML("/files/SplashView.fxml"), 920, 620);
+        scene.getStylesheets().add(getClass().getResource("/files/styles.css").toExternalForm());
+        primaryStage.setTitle("FSC CSC325 _ Full Stack Project");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -35,12 +33,11 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml ));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml));
         return fxmlLoader.load();
     }
 
     public static void main(String[] args) {
         launch(args);
     }
-
 }

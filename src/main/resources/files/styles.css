@@ -1,0 +1,143 @@
+.root {
+    -fx-background-color: #9B7A2E;
+    -fx-font-family: "Arial";
+    -fx-font-size: 13px;
+}
+
+.menu-bar {
+    -fx-background-color: #7A5C1E;
+    -fx-padding: 2 5 2 5;
+}
+
+.menu-bar .menu .label {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+
+.menu-bar .menu:hover,
+.menu-bar .menu:focused,
+.menu-bar .menu:showing {
+    -fx-background-color: #5C4010;
+}
+
+.context-menu {
+    -fx-background-color: #7A5C1E;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+    -fx-background-color: #5C4010;
+}
+
+#leftPanel {
+    -fx-background-color: #9B7A2E;
+    -fx-min-width: 145;
+    -fx-max-width: 145;
+}
+
+#rightPanel {
+    -fx-background-color: #7FFF00;
+    -fx-min-width: 205;
+    -fx-max-width: 205;
+    -fx-padding: 10;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #39FF14;
+    -fx-border-width: 2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 5 8 5 8;
+}
+
+.text-field:focused {
+    -fx-border-color: #00CC00;
+}
+
+.password-field {
+    -fx-background-color: white;
+    -fx-border-color: #39FF14;
+    -fx-border-width: 2;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 5 8 5 8;
+}
+
+.password-field:focused {
+    -fx-border-color: #00CC00;
+}
+
+.button {
+    -fx-background-color: #9B7A2E;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 8 10 8 10;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #7A5C1E;
+}
+
+.button:pressed {
+    -fx-background-color: #5C4010;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #9B7A2E;
+    -fx-border-width: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #D4B96A;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #D4B96A;
+    -fx-border-color: #9B7A2E;
+    -fx-border-width: 0 1 1 0;
+    -fx-size: 32;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #3B2800;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-cell-size: 28;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #FAF5E8;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #9B7A2E;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: #666666;
+    -fx-font-style: italic;
+}
+
+#splashTitle {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}

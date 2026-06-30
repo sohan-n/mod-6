@@ -1,29 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.example.csc325_firebase_webview_auth.model;
 
-/**
- *
- * @author MoaathAlrajab
- *
- *
- *
- *
- * Model:
- *
- *
- */
 public class Person {
+    private String id;
     private String name;
     private String major;
     private int age;
+    private String imageUrl;
 
-    public Person(String name, String major, int age) {
+    public Person(String id, String name, String major, int age) {
+        this.id = id;
         this.name = name;
         this.major = major;
         this.age = age;
+        this.imageUrl = "";
+    }
+
+    public Person(String id, String name, String major, int age, String imageUrl) {
+        this.id = id;
+        this.name = name;
+        this.major = major;
+        this.age = age;
+        this.imageUrl = imageUrl == null ? "" : imageUrl;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -49,7 +54,12 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
-    
-    
-    
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 }
